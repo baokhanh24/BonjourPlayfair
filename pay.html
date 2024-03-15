@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/mainss.css">
+    <link rel="stylesheet" href="./assets/css/pay.css">
+</head>
+<body>
+    <div class="main">
+        <div class="grid grid__container">
+            <div class="pay__header">
+                <div class="pay__logo">
+                    <a href="./index.html" class="">
+                        <img src="./assets/img/playfair.png" alt="">
+                    </a>
+                </div>
+                <div class="pay__content">
+                    <div class="pay__Information">
+                        <div class="informaiton">
+                            <h2 class="information__table">Thông tin mua hàng</h2>
+                            <a href="./login.html" class="login">
+                                <i class="ti-user"></i>
+                                <span>Đăng Nhập</span>
+                            </a>
+                            
+                        </div>
+                        <div class="fieldset">
+                            <div class="field">
+                                <div class="field__input-wrapper">
+                                    <input name="email" id="email" type="email" class="field__input" data-bind="email" placeholder="Email (tùy chọn)" value="">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="field__input-wrapper">
+                                    <input name="billingName" id="billingName" type="text" class="field__input" data-bind="billing.name" placeholder="Họ & Tên" value="">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="field__input-wrapper">
+                                    <input name="billingPhone" id="billingPhone" type="tel" class="field__input" data-bind="billing.phone" placeholder="Số Điện Thoại" value="">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="field__input-wrapper">
+                                    <input name="billingAddress" id="billingAddress" type="text" class="field__input" data-bind="billing.address" placeholder="Địa chỉ" value="">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                                <option value="" selected>Chọn tỉnh thành</option>           
+                                </select>
+                                          
+                                <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                                <option value="" selected>Chọn quận huyện</option>
+                                </select>
+                                
+                                <select class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                                <option value="" selected>Chọn phường xã</option>
+                                </select>
+                             </div>    
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="pay__Transport">
+                      <div class="section__header">
+                        <h3>Vận chuyển</h3>
+                      </div>
+                      <div class="alert">
+                        Vui lòng nhập thông tin giao hàng 
+                      </div>
+                      <div class="ship">
+                        <input  name="paymentMethodd" id="paymentMethodd" type="radio" class="input-radio" data-bind="paymentMethod" value="509520"  > 
+                        <span>phí ship 30k</span>
+                      </div>
+                      <div class="section__center">
+                        <h3>Thanh toán</h3>
+                      </div>
+                      <div class="content-box" data-define="{paymentMethod: undefined}">
+											
+											
+                        <div class="content-box__row">
+                          <div class="radio-wrapper">
+                            <div class="radio__input">
+                              <input  name="paymentMethod" id="paymentMethod" type="radio" class="input-radio" data-bind="paymentMethod" value="509520" > 
+                            </div>
+                            <label for="paymentMethod-509520" class="radio__label">
+                              <span class="radio__label__primary">Thanh toán khi giao hàng (COD)</span>
+                              <span class="radio__label__accessory">
+                                <span class="radio__label__icon">
+                                 <img src="./assets/img/money.png" alt="">
+                                </span>
+                              </span>
+                            </label>
+                          </div>
+                          
+                          <div class="content-box__row__desc hide">
+                            <p>Bạn chỉ phải thanh toán sau khi nhận được hàng. <br></p> 
+                            <p><b><i>Được xem hàng, không được thử</i></b></p>
+                            
+                          </div>
+                          
+                        </div>
+                        
+                        <div class="content-box__row">
+                          <div class="radio-wrapper">
+                            <div class="radio__input">
+                              <input name="paymentMethod" id="paymentMethod" type="radio" class="input-radio" data-bind="paymentMethod" value="506993">
+                            </div>
+                            <label for="paymentMethod-506993" class="radio__label">
+                              <span class="radio__label__primary">Thanh toán qua Ví điện tử MoMo</span>
+                              <span class="radio__label__accessory">
+                                <span class="radio__label__icon">
+                                  <img src="./assets/img/momo.png" alt="">
+                                </span>
+                              </span>
+                            </label>
+                          </div>
+                          
+                          <div class="content-box__row__desc hide" >
+                            <p>Thanh toán nhanh và an toàn qua MoMo.</p>
+                            
+                          </div>
+                          
+                        </div>
+                        
+                        
+                        
+                        <div class="content-box__row">
+                          <div class="radio-wrapper">
+                            <div class="radio__input">
+                              <input onclick="hide(); return false;" name="paymentMethod" id="paymentMethod" type="radio" class="input-radio" data-bind="paymentMethod" value="402936">
+                            </div>
+                            <label for="paymentMethod-402936" class="radio__label">
+                              <span class="radio__label__primary">Chuyển khoản qua ngân hàng</span>
+                              <span class="radio__label__accessory">
+                                <span class="radio__label__icon">
+                                  <img src="./assets/img/mbbank.jpg" alt="">
+                                </span>
+                              </span>
+                            </label>
+                          </div>
+                          
+                          <div id="hidee" class="content-box__row__desc hide" >
+                            <p>Ngân hàng <b>MBbank</b><br></p> <p>Chủ tài khoản <b>PHAM NGUYEN BAO KHANH</b><br></p> <p>Số tài khoản <b>8880479999</b><br><br></p> <p></p><center><font color="red"><b>QUÉT MÃ ĐỂ THANH TOÁN NHANH</b></font></center><p></p> <p><img src="./assets/img/qr mb.png"><br></p>
+                            
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="side__bar">
+              <div class="sidebar__title">
+                <h3>Đơn Hàng</h3>
+              </div>
+              <div class="order-summary-sections">
+                <div class="product-img">
+                  <img src="./assets/img/hinh1.jpg" alt="">
+                  <span>1</span>
+                </div>
+                <div class="product-description">
+                  <span class="product-description-name">Kaki Mix Faux Leather Cargo Pants ( Black)</span>
+                  <span class="product-description-size">M</span>
+                </div>
+                <div class="product-price">
+                  <span class="order-summary-emphasis">766000</span>
+                </div>  
+              </div>
+              <div class="field-input-wrapper">
+                <input type="text" class="field-input" placeholder="Mã Giảm Giá">
+                <button type="submit" class="field-input-btn btn ">
+                  <span class="btn-content">Áp dụng</span>
+                </button>
+              </div>
+              <div class="total-line-table__tbody">
+                <div class="total-line">
+                  <span>Tạm Tính</span>
+                  <span class="tienhang"></span>
+                </div>
+                <div class="total-line">
+                  <span>Phí Vận Chuyển</span>
+                  <span class="shippingFee">30000</span>
+
+                </div>
+              </div>
+              <div class="total__sum">
+                <div class="sum__money">
+                  <span class="sum">Tổng Cộng</span>
+                  <span class="money">750.000₫</span>
+                </div>
+              </div>
+              <div class="side__bar_back">
+                <div class="bar_back">
+                  <a href="./cart.html" class="back" >
+                    <i class="ti-back-left"></i>
+                    Quay lại Giỏ Hàng
+                </a>
+                  <button class="btn btn_pay">Đặt Hàng</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/informationHide.js"></script>
+    <script src="./assets/js/pay.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+      var citis = document.getElementById("city");
+      var districts = document.getElementById("district");
+      var wards = document.getElementById("ward");
+      var Parameter = {
+        url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json", 
+        method: "GET", 
+        responseType: "application/json", 
+      };
+      var promise = axios(Parameter);
+      promise.then(function (result) {
+        renderCity(result.data);
+      });
+
+      function renderCity(data) {
+        for (const x of data) {
+          citis.options[citis.options.length] = new Option(x.Name, x.Id);
+        }
+        citis.onchange = function () {
+          district.length = 1;
+          ward.length = 1;
+          if(this.value != ""){
+            const result = data.filter(n => n.Id === this.value);
+
+            for (const k of result[0].Districts) {
+              district.options[district.options.length] = new Option(k.Name, k.Id);
+            }
+          }
+        };
+        district.onchange = function () {
+          ward.length = 1;
+          const dataCity = data.filter((n) => n.Id === citis.value);
+          if (this.value != "") {
+            const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+            for (const w of dataWards) {
+              wards.options[wards.options.length] = new Option(w.Name, w.Id);
+            }
+          }
+        };
+      }
+	  </script>
+    <script>
+      // Get all the paymentMethod radio buttons
+      var paymentMethodRadios = document.querySelectorAll('input[name="paymentMethod"]');
+
+      // Get the content-box__row__desc elements
+      var contentDescs = document.querySelectorAll(".content-box__row__desc");
+
+      // Add a click event listener to each paymentMethod radio button
+      paymentMethodRadios.forEach(function(radio) {
+        radio.addEventListener("click", function() {
+          // Loop through all the content-box__row__desc elements
+          contentDescs.forEach(function(desc) {
+            // Add the "hide" class to each content-box__row__desc element
+            desc.classList.add("hide");
+          });
+          
+          // Get the index of the clicked radio button
+          var index = Array.from(paymentMethodRadios).indexOf(radio);
+          
+          // Remove the "hide" class from the corresponding content-box__row__desc element
+          contentDescs[index].classList.remove("hide");
+        });
+      });
+ 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    
+    <link href="E:\Bonjour Playfair\Bonjour Playfair\assets\font\themify-icons-font\themify-icons\themify-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/mainss.css">
+    <link rel="stylesheet" href="./assets/css/logins.css">
+</head>
+<body>
+    <div class="header">
+        <div class="grid header_container">
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li><a href="./index.html" class="header__menu-items">Trang Chủ</a>
+                    </li>
+                    <li class="header__menu_product" ><a href="./product.html" class="header__menu-items">Sản Phẩm</a>
+                        <div class="navbar">
+                            <ul class="navbar__menu">
+                                <li><a href="" class="navber__items">T-Shirt</a></li>
+                                <li><a href="" class="navber__items">Pants</a></li>
+                                <li><a href="" class="navber__items">New Arrivals</a></li>
+                                <li><a href="" class="navber__items">Shirt</a></li>
+                                <li><a href="" class="navber__items">Hat</a></li>
+                                <li><a href="" class="navber__items">Jacket</a></li>
+                                <li><a href="" class="navber__items">Hoodie</a></li>
+                                <li><a href="" class="navber__items">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__menu-treem"><a href="" class="header__menu-items">Blog</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="header__logo">
+                <a href="./index.html"><img src="./assets/img/playfair.png" alt="" class="header__logo-img"></a>
+
+            </div>
+            <div class="header__right">
+                <div class="header__seach">
+                    <form class="search-form" action="">
+                        <button class="submit">
+                            <i class="ti-search heade"></i>
+                        </button>
+                        <input type="text" class="header__seach-input" name="" placeholder="TÌM KIẾM SẢN PHẨM">
+                        <div class="header__quick-search">
+                            <div class="header__item-searchs">
+                                <h4 class="header__seach-title">Tìm kiếm nhiều nhất</h4>
+                                <div class="header__item-side-size">
+                                   
+                                       <a href="" class="header__item-side-size--items">áo khoác</a>
+                                
+
+                                        <a href="" class="header__item-side-size--items">áo thun</a>
+                                   
+
+                                        <a href="" class="header__item-side-size--items">áo nỉ</a>
+                                 
+
+                                        <a href="" class="header__item-side-size--items">giày</a>
+                                </div>   
+                                
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="header__actions">
+                    <ul class="header__actions-list">
+                        <li><a href="" class="header__actions-items">
+                            <i class="ti-headphone"></i>
+                        </a></li>
+                        <li><a href="./login.html" class="header__actions-items">
+                            <i class="ti-user"></i>
+
+                        </a></li>
+                        <li  style="line-height: 1px;" >
+                            <a href="" class="header__actions-items" onclick="bagnav(); return false;">
+                                <i class="ti-bag"></i>
+                                <span class="header__actions-number">0</span>
+
+                            </a>
+                            <div id="mysidenav" class="side__cart">
+                                <div class="site-nav-container">
+                                    <p class="title">Giỏ hàng
+                                        <a href="javascript:void(0)" class="close" onclick="closenav()">x</a>
+                                    </p>
+                                    <div class="cart-view">
+                                        <a href="" class="cart__product">
+                                            <img src="./assets/img/hinh1.jpg" alt="">
+                                        </a>
+                                        <div class="cart__information">
+                                            <a href="" class="cart__information-title">
+                                                Baggy Jeans ( Black )
+                                            </a>
+                                            <span class="variant">S</span>
+                                            <span class="pro-quantity-view">1</span>
+                                            <span class="pro-price-view">750,000₫</span>
+                                        </div>
+                                        <span class="remove__cart">x</span>
+                                        
+                                    </div> 
+                                    <div class="cart__pay">
+                                        <p class="pay__sum">tổng tiền :
+                                            <span class="pay__money">750,000₫</span>
+                                        </p>
+                                    </div>
+                                    <div class="cart-button">
+                                        <a href="./cart.html" class="button__clinks">
+                                            Xem Giỏ Hàng
+                                        </a>
+                                        <a href="./pay.html" class="button__clinks">
+                                            Thanh Toán
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="login">
+        <div class="login__container">
+            <div class="error-label" id="error-label">
+                <!-- Error message will be displayed here -->
+            </div>
+            <div class="login__container-list">
+                <div class="grid__colum_2 login__colum">
+                    <div class="login_wrapbox">
+                        <h1 class="login__title">Đăng Nhập</h1> 
+                    </div>
+                </div>
+                <div class="grid__colum_2">
+                    <div class="login_account">
+                        <form action="" name="" id="login" class="login_account-form">
+                            <input type="text" placeholder="Email" class="login_account_email">
+                            <input type="text" placeholder="Mật Khẩu" class="login_account_pass">
+                            
+                            <div class="login__submit">
+                                <input type="submit" value="Đăng Nhập" class="login_account_login btn">
+                                <div class="login__req_pass">
+                                    <a href="" class="req_pass" onclick="showRecoverPasswordForm();return false;">Quên mật khẩu</a>
+                                    <span class="and">hoặc</span>
+                                    <a href="./Registration.html" class="login__Registration">Đăng ký</a>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="" name="" id="recover-password" class="login_Forgot-password">
+                            <h3 class="login_Forgot-password_title">Phục hồi mật khẩu</h3>
+                            <input type="text" placeholder="Email" class="login_Forgot-password_email">
+                            
+                            
+                            <div class="login__submit">
+                                
+                                <input type="submit" value="Gửi" class="login_send btn">
+                                <div class="login__req_pass">
+                                    <a href="" onclick="hideRecoverPasswordForm();return false;" class="cancel">Hủy</a>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__colum_2__4">
+                    <div class="footer__customer">
+                        <h3 class="footer_customer-title">Chăm sóc Khách Hàng</h3>
+                        <ul class="footer_customer-list">
+                            <li><a href="" class="footer_customer-items">Trung Tâm Trợ Giúp</a></li>
+                            <li><a href="" class="footer_customer-items">Shopee Blog</a></li>
+                            <li><a href="" class="footer_customer-items">Shopee Mall</a></li>
+                            <li><a href="" class="footer_customer-items">Hướng Dẫn Mua Hàng</a></li>
+                            <li><a href="" class="footer_customer-items">Hướng Dẫn Bán Hàng</a></li>
+                            <li><a href="" class="footer_customer-items">Thanh Toán</a></li>
+                            <li><a href="" class="footer_customer-items">Shopee Xu</a></li>
+                            <li><a href="" class="footer_customer-items">Vận Chuyển</a></li>
+                            <li><a href="" class="footer_customer-items">Trả Hàng & Hoàn Tiền</a></li>
+                            <li><a href="" class="footer_customer-items">Chăm Sóc Khách Hàng</a></li>
+                            <li><a href="" class="footer_customer-items">Chính Sách Bảo Hành</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__colum_2__4">
+                    <div class="footer__customer">
+                        <h3 class="footer_customer-title">VỀ SHOPEE</h3>
+                        <ul class="footer_customer-list">
+                            <li><a href="" class="footer_customer-items">Giới Thiệu Về Shopee Việt Nam</a></li>
+                            <li><a href="" class="footer_customer-items">Tuyển Dụng</a></li>
+                            <li><a href="" class="footer_customer-items">Shopee Mall</a></li>
+                            <li><a href="" class="footer_customer-items">Điều Khoản Shopee</a></li>
+                            <li><a href="" class="footer_customer-items">Chính Sách Bảo Mật</a></li>
+                            <li><a href="" class="footer_customer-items">Chính Hãng</a></li>
+                            <li><a href="" class="footer_customer-items">Kênh Người Bán</a></li>
+                            <li><a href="" class="footer_customer-items">Flash Sales</a></li>
+                            <li><a href="" class="footer_customer-items">Chương Trình Tiếp Thị Liên Kết Shopee</a></li>
+                            <li><a href="" class="footer_customer-items">Liên Hệ Với Truyền Thông</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__colum_2__4">
+                    <div class="footer__customer">
+                        <h3 class="footer_customer-title">Thanh Toán</h3>
+                        <ul class="footer_customer-list-item">
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/d4bbea4570b93bfd5fc652ca82a262a8" alt="" class="footer_customer-icon-link">
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/a0a9062ebe19b45c1ae0506f16af5c16" alt="" class="footer_customer-icon-link">
+
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/38fd98e55806c3b2e4535c4e4a6c4c08" alt="" class="footer_customer-icon-link">
+
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/bc2a874caeee705449c164be385b796c" alt="" class="footer_customer-icon-link">
+
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/2c46b83d84111ddc32cfd3b5995d9281" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/5e3f0bee86058637ff23cfdf2e14ca09" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/9263fa8c83628f5deff55e2a90758b06" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/0217f1d345587aa0a300e69e2195c492" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            
+                            
+                        </ul>
+                        <h3 class="footer_customer-title footer_customer-title-ship">đơn vị vận chuyển</h3>
+                        <ul class="footer_customer-list-item">
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/5e7282bd0f7ee0872fdb0bd1d40fbe9e" alt="" class="footer_customer-icon-link">
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/d10b0ec09f0322f9201a4f3daf378ed2" alt="" class="footer_customer-icon-link">
+
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/77bf96a871418fbc21cc63dd39fb5f15" alt="" class="footer_customer-icon-link">
+
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/59270fb2f3fbb7cbc92fca3877edde3f" alt="" class="footer_customer-icon-link">
+
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/957f4eec32b963115f952835c779cd2c" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/0d349e22ca8d4337d11c9b134cf9fe63" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/3900aefbf52b1c180ba66e5ec91190e5" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/6e3be504f08f88a15a28a9a447d94d3d" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/b8348201b4611fc3315b82765d35fc63" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            <li><a href="" class="footer_customer-icon">
+                                <img src="https://cf.shopee.vn/file/0b3014da32de48c03340a4e4154328f6" alt="" class="footer_customer-icon-link">
+                                
+                            </a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__colum_2__4">
+                    <div class="footer__customer">
+                        <h3 class="footer_customer-title">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer_customer-list footer_customer-list--network">
+                            <li><a href="" class="footer_customer-items footer_customer-items-link ">
+                                <img class="footer_customer-items--Social" src="https://cf.shopee.vn/file/2277b37437aa470fd1c71127c6ff8eb5" alt="">
+                                Facebook
+                            </a></li>
+                            <li><a href="" class="footer_customer-items footer_customer-items-link">
+                                <img class="footer_customer-items--Social" src="https://cf.shopee.vn/file/5973ebbc642ceee80a504a81203bfb91" alt="">
+                                Instagram
+                            </a></li>
+                            <li><a href="" class="footer_customer-items footer_customer-items-link">
+                                <img class="footer_customer-items--Social" src="https://cf.shopee.vn/file/f4f86f1119712b553992a75493065d9a" alt="">
+                                linkedln
+                            </a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__colum_2__4">
+                    <div class="footer__customer">
+                        <h3 class="footer_customer-title">Chăm sóc Khách Hàng</h3>
+                        <div class="footer_customer-qr">
+                            <a href="" class="footer_customer-qr--link">
+                                <img src="https://cf.shopee.vn/file/a5e589e8e118e937dc660f224b9a1472" alt="" >
+                            </a>
+                            <div class="footer_customer-application">
+                                <a href="" class="footer_customer-application-link">
+                                    <img src="https://cf.shopee.vn/file/ad01628e90ddf248076685f73497c163" alt="">
+                                </a>
+                                <a href="" class="footer_customer-application-link">
+                                    <img src="https://cf.shopee.vn/file/ae7dced05f7243d0f3171f786e123def" alt="">
+                                </a>
+                                <a href="" class="footer_customer-application-link footer_customer-application-link-icon">
+                                    <img src="https://cf.shopee.vn/file/35352374f39bdd03b25e7b83542b2cb0" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/forgotpasswrod.js"></script>
+    <script>
+        function bagnav(){
+            
+            document.getElementById("mysidenav").style.width = "400px"
+        }
+        function closenav(){
+            document.getElementById("mysidenav").style.width = "0"
+        }
+    </script>
+   <script>
+    function showError(message, duration) {
+        var errorLabel = document.getElementById('error_label');
+        errorLabel.innerHTML = message;
+        errorLabel.style.display = 'block';
+
+        setTimeout(function() {
+            errorLabel.style.display = 'none';
+        }, duration);
+    }
+
+    // Example usage:
+    showError("This is an error message.", 5000); // Display the error message for 5 seconds (5000 milliseconds)
+</script>
+</body>
+</html>

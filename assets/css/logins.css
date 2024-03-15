@@ -1,0 +1,240 @@
+.login{
+  height: 738px;
+    margin-top: 8rem;
+}
+.login__container{
+    height: 100%;
+}
+.login__container-list{
+    display:flex;
+    height: 100%;
+}
+.login__colum{
+    height: 100%;
+    border-right: 1px rgb(158, 149, 149);
+    
+    
+}
+.login_wrapbox{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ccc;
+    
+   
+}
+
+.login__title,
+.registration__title{
+    font-size: 54px;
+    position: relative;
+    line-height: 60px;
+    padding-bottom: 120px;
+}
+.login__title::before,
+.registration__title::before{
+    content: "";
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    background: #000;
+    display: block;
+    width: 60px;
+    height: 4px;
+}
+
+.login_account{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 244px;
+}
+.login__center{
+  padding:50px 170px;
+
+  display: block;
+}
+.login_account-form,
+.login_Forgot-password{
+    width: 430px;
+    height: 50px;
+}
+
+.login_Forgot-password{
+    display: none;  
+}
+
+.login_account_email,
+.login_account_pass,
+.login_Forgot-password_email,
+.login_registration_surname,
+.login_registration_Name,
+.login_registration_date,
+.login_registration_email,
+.login_registration_pass,
+.login_registration_sdt{
+    border:none;
+    outline: none;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    padding:10px 20px;
+
+}
+.login_account_email:focus,
+.login_account_pass:focus,
+.login_Forgot-password_email:focus,
+.login_registration_surname:focus,
+.login_registration_Name:focus,
+.login_registration_date:focus,
+.login_registration_email:focus,
+.login_registration_pass:focus,
+.login_registration_sdt:focus{
+    border:1px solid#EDEDED;
+    background-color: #fff;
+}
+.login_Forgot-password_title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:30px
+}
+.login_account_pass{
+    display: block;
+}
+.login__req_pass{
+    display: inline-block;
+    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+.login_send,
+.login_account_login,
+.login_registration_registration
+ {
+    width: 130px;
+    height: 50px;
+    background-color: #000;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to right, #000 50%, #fff 50%) left;
+    background-size: 200%;
+    transition: .4s ease-out;
+}
+.login_account_login:hover,.login_send:hover,
+.login_registration_registration:hover{
+    background-position: right;
+    color:#000;
+    border:1px solid #000
+}
+
+.login__req_pass .req_pass,
+.login__req_pass .cancel
+{
+    color:#000;
+    font-size: 13px;
+    
+}
+.login__req_pass .req_pass:hover,.login__req_pass .cancel:hover{
+    color:#a9a6a6;
+}
+.login__Registration{
+    color:#000;
+    font-size: 13px;
+}
+.login__Registration:hover{
+    color:#a9a6a6;
+}
+.login__req_pass .and{
+    font-size: 12px;
+    margin-right:0px;
+    color :rgb(165, 155, 155);
+    padding:5px;
+}
+/* registration */
+.radio-group{
+  margin-bottom: 30px;
+}
+.radio{
+  font-size: 13px;
+  font-size: 500;
+  text-transform: capitalizes;
+  display: inline-block;
+  vertical-align: middle;
+  color:#000;
+  position: relative;
+  padding-left: 25px;
+}
+  
+
+.radio + .radio{
+  margin-left: 20px;
+}
+.radio input[type="radio"]{
+  display: none;
+}
+.radio span{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border:2px solid#C2C2C2;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.radio span::after{
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: 0.2s ease-in-out 0s;
+}
+.radio input[type="radio"]:checked ~ span::after{
+  transform: translate(-50%,-50%) scale(1);
+}
+.registrantion__back{
+  margin-top: 25px;
+
+}
+.registrantion__back-click{
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.registrantion__back-click i{
+  margin-right: 5px;
+}
+.registrantion__back-click:hover{
+  color:#C2C2C2
+
+}
+
+#error_label {
+  position: fixed;
+  top: 20px;
+  right: -300px; /* Start position outside the screen */
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 9999;
+  display: none;
+  animation: slide-in 0.3s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+      right: -300px; /* Start position outside the screen */
+  }
+  100% {
+      right: 20px; /* End position at desired position from the right */
+  }
+}

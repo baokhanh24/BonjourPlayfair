@@ -1,0 +1,316 @@
+.pay__header{
+    width: 65%;
+}
+.pay__content{
+    display: flex;
+}
+.pay__Information{
+    width: 50%;
+    padding-right:5px;    
+    
+}
+.pay__Transport{
+    width: 50%;
+    padding:0 10px; 
+}
+.pay__logo{
+    margin-right: 100px;
+}
+.pay__logo img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover
+
+}
+.informaiton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding:0 5px;
+}
+
+.information__table{
+    font-size: 18px;  
+}
+.login i{
+    width: 18px;
+    padding-right: 5px;
+}
+.login span{
+    font-size: 14px;
+}
+.field {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4em;
+}
+.field__input-wrapper{
+    position: relative;
+}
+
+.field__input,
+.form-select{
+    padding-top: 1.5em;
+    padding-bottom: 0.35em;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.94em 0.8em;
+    border: 1px #d9d9d9 solid;
+    height: 44px;
+    background-color: #fff;
+    color: #333;
+    
+}
+.form-select{
+    margin-bottom: 0.6em;
+}
+/* VAN CHUYEN */
+.section__header{
+    margin-bottom: 16px;
+}
+.section__header h3{
+    font-size: 18px;
+    
+}
+.alert,
+.ship{
+    width: 100%;
+    background-color: #D1ECF1;
+    padding: 13px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.ship{
+    display: none;
+    
+}
+.section__center{
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+.section__center h3{
+    font-size: 18px;
+}
+.content-box{
+    border: 1px solid #cecdcd;
+}
+.content-box__row {
+    display: table;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    padding: 1em;
+}
+.radio-wrapper{
+    display: flex;
+    align-items: center;
+}
+.radio__input{
+    margin-right: 3px;
+}
+.radio__label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+}
+.radio__label__primary{
+    font-size: 14px;
+}
+.radio__label__icon img{
+    height: 28px;
+}
+.content-box__row__desc {
+    background-color: #f8f8f8;
+    padding: 2.14em;
+    margin: 1.14em -1.14em -1.14em -1.14em;
+    border-color: rgba(175,175,175,.34);
+    border-style: solid;
+    border-width: 1px;
+}
+.content-box__row__desc p{
+    font-size: 12px;
+    margin:14px 0;
+}
+.content-box__row__desc img{
+    display: flex;
+    margin: auto;
+}
+
+/* product_pay */
+.side__bar{
+    width: 35%;
+    padding-left: 25px;
+    background-color: #FAFAFA;
+}
+.sidebar__title{
+    padding:20px 0;
+    border-bottom: 1px solid #D1ECF1;
+}
+.sidebar__title h3{
+    font-size: 20px;
+}
+.grid__container{
+    display: flex;
+}
+.order-summary-sections{
+    margin-top:20px;
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D1ECF1;
+}
+.product-img{
+    position: relative;
+    
+}
+.product-img img{
+    height: 65px;
+    border-radius: 4px;
+}
+.product-img span{
+    font-size: 11px;
+    
+    padding: 0 0.62em;
+    border-radius: 2em;
+    background-color: #A3A3A3;
+    color: #fff;
+    position: absolute;
+    right: -0.9em;
+    top: -0.55em;
+    
+    
+    min-width: 1.75em;
+    height: 1.75em;
+    text-align: center;
+    line-height: 1.45em;
+}
+.product-description,
+.product-price{
+    padding-left: 15px;
+    
+}
+.product-description-name,
+.product-description-size,
+.order-summary-emphasis{
+    font-size: 12px;
+    display: block;
+}
+.product-price{
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.product-price{
+    flex:1;
+}
+.field-input-wrapper{
+    margin-top: 20px;
+    display: flex;
+}
+.field-input{
+    box-shadow: 0 0 0 1px #d9d9d9;
+    transition: all 0.2s ease-out;
+    background-color: white;
+    color: #333333;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #D1ECF1;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding:15px 25px;
+    word-break: normal;
+}
+.field-input-btn{
+    margin-left: 10px;
+    box-shadow: 0 0 0 1px #d9d9d9;
+    transition: all 0.2s ease-out;
+    background-color: black;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 30px;
+    outline: none;
+    border: 1px solid #D1ECF1;
+    
+    
+}
+.btn-content{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.field-input-wrapper{
+    
+    border-bottom:1px solid #D1ECF1;
+    padding-bottom: 15px;
+}
+.total-line-table__tbody{
+    padding:20px 10px;
+    border-bottom:1px solid #D1ECF1;
+}
+.total-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total-line span{
+    font-size: 14px;
+    padding:5px 0;
+}
+.total__sum{
+    padding:20px 10px;
+   
+}
+.sum__money{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sum{
+    font-size: 18px;
+}
+.money{
+    font-size: 18px;
+    font-weight: bold;
+}
+.side__bar_back{
+    padding:10px 10px;
+}
+.bar_back{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.back{
+    font-size: 13px;
+    color:#000;
+}
+
+.back:hover{
+    color:rgba(181, 168, 168, 0.8);
+}
+.btn_pay{
+    padding:15px 10px;
+    background-color: #000;
+    color:#fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    
+}
+.field-input-btn:hover,
+.btn_pay:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #D1ECF1;
+}
+.hide{
+    display: none;
+}

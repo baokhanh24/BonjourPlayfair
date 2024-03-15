@@ -1,0 +1,192 @@
+.content_title{
+    padding: 20px 15px;
+    margin: 30px 0;
+}
+.content_title h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+.content_title h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 25px auto 0;
+    background: #252a2b;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+.row_information{
+    padding:10px;    
+    margin: 0px 365px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+}
+.row_title h3,
+.modal-content h3,
+.modal_change h3{
+    font-size: 20px;
+    padding: 10px 0 10px ;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 10px 0;
+   
+    display: block;
+}
+.user-info {
+    margin-bottom: 10px;
+    padding:5px 0;  
+}
+
+.user-info label {
+    font-size: 16px;
+    font-weight: bold;
+}
+.user-info span{
+    font-size: 16px;
+}
+
+.edit-button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.change-password-button {
+    display: inline-block;
+    padding:10px 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.edit-button,
+.change-password-button,
+#saveButton1,
+#saveButton2{
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 13px 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #000;
+    background: linear-gradient(to right, #000 50%, #fff 50%) left;
+    background-size: 200%;
+    transition: 0.4s ease-out;
+}
+.edit-button:hover,
+.change-password-button:hover,
+#saveButton:hover{
+    background-position: right;
+    color: #000;
+    border: 1px solid #000;
+}
+.user_button{
+    text-align: center;
+}
+
+
+/* Modal */
+.fullmodal,.full_change{
+    display: none;
+}
+.modal,.modal-overlay {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+   
+}
+
+
+
+.modal-content,.modal_change {
+    position: relative;
+    width: 400px;
+    min-height: 425px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    animation: khanhpro ease .3s;
+}
+@keyframes khanhpro {
+    from{
+        opacity: 0.3;
+        transform: translatey(-220px);
+
+    }
+    to{
+        transform: translatex(0);
+    }
+}
+
+.modal-content label,
+.modal_change label {
+    font-size: 16px;
+    font-weight: bold;
+    padding:5px 0;
+    display: block;
+}
+
+.modal-content input,
+.modal_change input {
+   
+    border:none;
+    outline: none;
+    background-color: #EDEDED;
+    width: 100%;
+    margin-bottom: 12px;
+    padding:10px 20px;
+}
+.modal-content input:focus,
+.modal_change input:focus{
+    border:1px solid#EDEDED;
+    background-color: #fff;
+}
+
+.modal-buttons {
+    text-align: right;
+}
+
+.modal-buttons button,
+.modal_change button{
+    padding: 13px 10px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.modal-buttons button.cancel-button,
+.modal_change #cancelbtn{
+    background-color: #ccc;
+    margin-right: 10px;
+}
